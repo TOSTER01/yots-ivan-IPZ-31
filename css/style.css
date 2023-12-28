@@ -15,8 +15,7 @@ header hr{
 
 .container{
     max-width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
+ 
     margin-left: auto;
     margin-right: auto;
 }
@@ -169,7 +168,6 @@ header hr{
 .about-us__text{
     margin-top: 10px;
     font-size: 14px;
-    font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.03em;
     text-align: left;
@@ -237,7 +235,6 @@ header hr{
     color: #212121;
     text-align: center;
     font-size: 36px;
-    font-style: normal;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1.08px;
@@ -276,7 +273,6 @@ header hr{
     color: #212121;
     text-align: center;
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.48px;
@@ -288,8 +284,6 @@ header hr{
     color: #757575;
     text-align: center;
     font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
     line-height: normal;
     letter-spacing: 0.48px;
     padding-bottom: 30px;
@@ -332,8 +326,6 @@ header hr{
 .footer__text address{
     color: #FFF;
     font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 16px;
     letter-spacing: 0.42px;
     margin-top: 28px;
@@ -342,10 +334,107 @@ header hr{
 .footer__text a{
     color: rgba(255, 255, 255, 0.60);
     font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 16px;
     letter-spacing: 0.42px;
     text-decoration: none;
     margin-top: 12px;
+}
+
+.main{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.buttons{
+    padding-bottom: 50px;
+}
+
+.buttons__list{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.buttons__item{
+    margin-right: 8px;
+}
+
+.buttons__item:last-child{
+    margin-right: 0px;
+}
+
+.buttons__selector{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+    color: #212121;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.48px;
+    border: none;
+    border-radius: 4px;
+    background: #F5F4FA;
+}
+
+.buttons__selector:hover{
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.48px;
+    border: none;
+    border-radius: 4px;
+    background: #2196F3;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+}
+
+.cards__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style: none;
+    gap: 30px;
+    margin: 0px 15px;
+}
+
+.cards__item{
+    border: 1px solid #EEE;
+    background: #FFF;
+    width: calc(33% - 17px);
+}
+
+.cards__item img{
+    width: 100%;
+}
+
+.item__container{
+    text-decoration: none;
+}
+
+.item__container h3{
+    color: #212121;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 1.08px;
+    padding-top: 20px;
+    padding-bottom: 4px;
+    padding-left: 24px;
+}
+
+.item__container p{
+    color: #757575;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.48px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+}
+
+.card-hide{
+    display: none;
 }
