@@ -20,8 +20,22 @@
           </nav>
         </div>
         <ul class="header__info">
-          <li class="info__item"><a href="#">info@devstudio.com</a></li>
-          <li class="info__item"><a href="#">+38 096 111 11 11</a></li>      
+          <li class="info__item">
+            <a href="mailto:info@devstudio.com">
+              <svg>
+                <use xlink:href="./images/icons.svg#email">
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="info__item">
+            <a href="tel:+38 096 111 11 11">
+              <svg>
+                <use xlink:href="./images/icons.svg#phone">
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
         </ul>
       </div>
       <hr>
@@ -36,18 +50,38 @@
       <section class = "about-us">
         <ul class="container about-us__list">
           <li class="about-us__item">
+            <div class="about-us__image">
+              <svg>
+                <use xlink:href="./images/icons.svg#antenna">
+              </svg>
+            </div>
             <span class="about-us__title">УВАГА ДО ДЕТАЛЕЙ</span>
             <p class="about-us__text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
           </li>
           <li class="about-us__item">
+            <div class="about-us__image">
+              <svg>
+                <use xlink:href="./images/icons.svg#clock">
+              </svg>
+            </div>
             <span class="about-us__title">ПУНКТУАЛЬНІСТЬ</span>
             <p class="about-us__text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
           </li>
           <li class="about-us__item">
+            <div class="about-us__image">
+              <svg>
+                <use xlink:href="./images/icons.svg#computer">
+              </svg>
+            </div>
             <span class="about-us__title">ПЛАНУВАННЯ</span>
             <p class="about-us__text">Так само консультація з широким активом значною мірою зумовлює.</p>
           </li>
           <li class="about-us__item">
+            <div class="about-us__image">
+              <svg>
+                <use xlink:href="./images/icons.svg#astronaut">
+              </svg>
+            </div>
             <span class="about-us__title">СУЧАСНІ ТЕХНОЛОГІЇ</span>
             <p class="about-us__text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
           </li>
@@ -57,9 +91,9 @@
         <div class="container our-works">
           <h2 class="our-works__title">Чим ми займаємося</h2>
           <ul class="our-works__list">
-            <li class="our-works__item"><img src="./images/mac-programming.jpg" width="370px" height="294px" alt="Людина програмує"></li>
-            <li class="our-works__item"><img src="./images/mobile-interface-development.jpg" width="370px" height="294px" alt="Людина розробляє дизайн для інтерфейсу"></li>
-            <li class="our-works__item"><img src="./images/color-choice.jpg" width="370px" height="294px" alt="Людина обирає колір"></li>
+            <li class="our-works__item"><img src="./images/mac-programming.jpg" width="370px" height="294px" alt="Людина програмує" loading="lazy"></li>
+            <li class="our-works__item"><img src="./images/mobile-interface-development.jpg" width="370px" height="294px" alt="Людина розробляє дизайн для інтерфейсу" loading="lazy"></li>
+            <li class="our-works__item"><img src="./images/color-choice.jpg" width="370px" height="294px" alt="Людина обирає колір" loading="lazy"></li>
           </ul>
         </div>
       </section>
@@ -68,24 +102,149 @@
           <h2 class="our-team__title">Наша команда</h2>
           <ul class="our-team__list">
             <li class="our-team__item our-team__card">
-              <img src="./images/igor-demyanenko.jpg" class="item__image" alt="Ігор Дем'яненко">
+              <img src="./images/igor-demyanenko.jpg" class="item__image" alt="Ігор Дем'яненко" loading="lazy">
               <h3 class="item__title">Ігор Дем'яненко</h3>
               <p class="item__text">Product Designer</p>
+              <div class="item__links">
+                <a href="https://www.instagram.com/" class="link__item">
+                  <svg>
+                    <use xlink:href="./images/icons.svg#icon-instagram">
+                  </svg>
+                </a>
+                <a href="https://twitter.com/" class="link__item">
+                  <svg>
+                    <use xlink:href="./images/icons.svg#icon-twitter">
+                  </svg>
+                </a>
+                <a href="https://www.facebook.com/" class="link__item">
+                  <svg>
+                    <use xlink:href="./images/icons.svg#icon-facebook">
+                  </svg>
+                </a>
+                <a href="https://linkedin.com/" class="link__item">
+                  <svg>
+                    <use xlink:href="./images/icons.svg#icon-linkedin">
+                  </svg>
+                </a>
+              </div>
             </li>
             <li class="our-team__item our-team__card">
-              <img src="./images/olha-repina.jpg" class="item__image" alt="Ольга Рєпіна">
+              <img src="./images/olha-repina.jpg" class="item__image" alt="Ольга Рєпіна" loading="lazy">
               <h3 class="item__title">Ольга Рєпіна</h3>
               <p class="item__text">Frontend Developer</p>
+              <div class="item__links">
+                <a href="https://www.instagram.com/" class="link__item">
+                  <svg>
+                    <use xlink:href="./images/icons.svg#icon-instagram">
+                  </svg>
+                </a>
+                <a href="https://twitter.com/" class="link__item">
+                  <svg>
+                    <use xlink:href="./images/icons.svg#icon-twitter">
+                  </svg>
+                </a>
+                <a href="https://www.facebook.com/" class="link__item">
+                  <svg>
+                    <use xlink:href="./images/icons.svg#icon-facebook">
+                  </svg>
+                </a>
+                <a href="https://linkedin.com/" class="link__item">
+                  <svg>
+                    <use xlink:href="./images/icons.svg#icon-linkedin">
+                  </svg>
+                </a>
+              </div>
             </li>
             <li class="our-team__item our-team__card">
-              <img src="./images/mykola-tarasov.jpg" class="item__image" alt="Микола Тарасов">
+              <img src="./images/mykola-tarasov.jpg" class="item__image" alt="Микола Тарасов" loading="lazy">
               <h3 class="item__title">Микола Тарасов</h3>
               <p class="item__text">Marketing</p>
+              <div class="item__links">
+                <a href="https://www.instagram.com/" class="link__item">
+                  <svg>
+                    <use xlink:href="./images/icons.svg#icon-instagram">
+                  </svg>
+                </a>
+                <a href="https://twitter.com/" class="link__item">
+                  <svg>
+                    <use xlink:href="./images/icons.svg#icon-twitter">
+                  </svg>
+                </a>
+                <a href="https://www.facebook.com/" class="link__item">
+                  <svg>
+                    <use xlink:href="./images/icons.svg#icon-facebook">
+                  </svg>
+                </a>
+                <a href="https://linkedin.com/" class="link__item">
+                  <svg>
+                    <use xlink:href="./images/icons.svg#icon-linkedin">
+                  </svg>
+                </a>
+              </div>
             </li>
             <li class="our-team__item our-team__card">
-              <img src="./images/mihaylo-ermakov.jpg" class="item__image" alt="Михайло Єрмаков">
+              <img src="./images/mihaylo-ermakov.jpg" class="item__image" alt="Михайло Єрмаков" loading="lazy">
               <h3 class="item__title">Михайло Єрмаков</h3>
               <p class="item__text">UI Designer</p>
+              <div class="item__links">
+                <a href="https://www.instagram.com/" class="link__item">
+                  <svg>
+                    <use xlink:href="./images/icons.svg#icon-instagram">
+                  </svg>
+                </a>
+                <a href="https://twitter.com/" class="link__item">
+                  <svg>
+                    <use xlink:href="./images/icons.svg#icon-twitter">
+                  </svg>
+                </a>
+                <a href="https://www.facebook.com/" class="link__item">
+                  <svg>
+                    <use xlink:href="./images/icons.svg#icon-facebook">
+                  </svg>
+                </a>
+                <a href="https://linkedin.com/" class="link__item">
+                  <svg>
+                    <use xlink:href="./images/icons.svg#icon-linkedin">
+                  </svg>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div class="container partners">
+          <h2 class="partners__title">Постійні клієнти</h2>
+          <ul class="partners__list">
+            <li class="partners__item">
+              <svg class="partners__icon">
+                <use xlink:href="./images/icons.svg#icon-company-1">
+              </svg>
+            </li>
+            <li class="partners__item">
+              <svg class="partners__icon">
+                <use xlink:href="./images/icons.svg#icon-company-2">
+              </svg>
+            </li>
+            <li class="partners__item">
+              <svg class="partners__icon">
+                <use xlink:href="./images/icons.svg#icon-company-3">
+              </svg>
+            </li>
+            <li class="partners__item">
+              <svg class="partners__icon">
+                <use xlink:href="./images/icons.svg#icon-company-4">
+              </svg>
+            </li>
+            <li class="partners__item">
+              <svg class="partners__icon">
+                <use xlink:href="./images/icons.svg#icon-company-5">
+              </svg>
+            </li>
+            <li class="partners__item">
+              <svg class="partners__icon">
+                <use xlink:href="./images/icons.svg#icon-company-6">
+              </svg>
             </li>
           </ul>
         </div>
@@ -93,11 +252,36 @@
     </main>
     <footer class="footer">
       <div class="container footer__wrapper">
-        <a class="footer__logo" href="#"><span>Web</span>Studio</a>
-        <div class="footer__text">
+        <div class="footer__info">
+          <a class="footer__logo" href="#"><span>Web</span>Studio</a>
           <address>м. Київ, пр-т Лесі Українки, 26</address>
-          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-          <a href="tel:+38 096 111 11 11">+38 096 111 11 11</a>
+          <a class="footer__contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <a class="footer__contact" href="tel:+38 096 111 11 11">+38 096 111 11 11</a>
+        </div>
+        <div class="footer__socials">
+          <h4>приєднуйтесь</h4>
+          <div class="socials__link">
+            <a href="https://www.instagram.com/" class="socials__item">
+              <svg>
+                <use xlink:href="./images/icons.svg#icon-instagram">
+              </svg>
+            </a>
+            <a href="https://twitter.com/" class="socials__item">
+              <svg>
+                <use xlink:href="./images/icons.svg#icon-twitter">
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/" class="socials__item">
+              <svg>
+                <use xlink:href="./images/icons.svg#icon-facebook">
+              </svg>
+            </a>
+            <a href="https://linkedin.com/" class="socials__item">
+              <svg>
+                <use xlink:href="./images/icons.svg#icon-linkedin">
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </footer>

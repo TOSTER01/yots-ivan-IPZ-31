@@ -26,6 +26,7 @@ header hr{
     align-items: center;
     height: 80px;
     justify-content: space-between;
+    padding-left: 10px;
 }
 
 .header__navigation{
@@ -91,8 +92,7 @@ header hr{
     list-style: none;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    width: 30%;
+    width: 35%;
 }
 
 .info__item{
@@ -108,6 +108,26 @@ header hr{
     text-decoration: none;
 }
 
+.info__item a svg{
+    fill: #AFB1B8;
+}
+
+.info__item:hover a svg{
+    fill: #2196F3;
+}
+
+.info__item:first-child a svg{
+    width: 16px;
+    height: 11.996px;
+    margin-right: 10px;
+}
+
+.info__item:nth-child(2n) a svg{
+    width: 10px;
+    height: 15.995px;
+    margin-right: 10px;
+}
+
 .info__item a:hover{
     color: #2196F3;
 }
@@ -118,6 +138,9 @@ header hr{
     height: 600px;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(0, 0, 0, 0)),url("../images/bussines-team.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .hero__title{
@@ -187,6 +210,21 @@ header hr{
     display: flex;
     justify-content: center;
     align-items: center;   
+}
+
+.about-us__image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(245, 244, 250, 1);
+    height: 120px;
+    width: 270px;
+    margin-bottom: 30px;
+}
+
+.about-us__image svg{
+    width: 70px;
+    height: 70px;
 }
 
 .our-works{
@@ -286,7 +324,102 @@ header hr{
     font-size: 16px;
     line-height: normal;
     letter-spacing: 0.48px;
+    padding-bottom: 28px;
+}
+
+.item__links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     padding-bottom: 30px;
+}
+
+.item__links a{
+    text-decoration: none;
+}
+
+.link__item{
+    height: 44px;
+    width: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.link__item:last-child{
+    margin-right: 0px;
+}
+
+.link__item:hover{
+    position: relative;
+    border-radius: 50%;
+    background-color: #2196F3;
+    transition: background-color 0.5s;
+}
+
+.link__item:hover svg{
+    fill: white;
+}
+
+.link__item svg{
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+}
+
+.partners{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.partners__title{
+    color: #212121;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+    padding-bottom: 50px;
+}
+
+.partners__list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.partners__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    border: 1px solid rgb(175, 177, 184);
+    border-radius: 4px;
+    height: 92px;
+    width: 170px;
+}
+
+.partners__item:hover{
+    border-color: rgb(33, 150, 243);
+}
+
+.partners__item:last-child{
+    margin-right: 0px;
+}
+
+.partners__icon use{
+    fill: rgba(175, 177, 184, 1);
+}
+ 
+.partners__item:hover use{
+     fill: #2196F3; ;
+}
+
+.partners__icon{
+    width: 106px;
+    height: 60px;
 }
 
 .footer{
@@ -295,8 +428,13 @@ header hr{
 
 .footer__wrapper{
     display: flex;
+    flex-direction: row;
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+.footer__info{
+    display: flex;
     flex-direction: column;
 }
 
@@ -318,26 +456,76 @@ header hr{
     letter-spacing: 0.78px;
 }
 
-.footer__text{
-    display: flex;
-    flex-direction: column;
-}
-
-.footer__text address{
+.footer__info address{
     color: #FFF;
     font-size: 14px;
+    font-style: normal;
     line-height: 16px;
     letter-spacing: 0.42px;
     margin-top: 28px;
 }
 
-.footer__text a{
+.footer__contact{
     color: rgba(255, 255, 255, 0.60);
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.42px;
     text-decoration: none;
     margin-top: 12px;
+    width: 231px;
+}
+
+.footer__socials{
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+}
+
+.footer__socials h4{
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    padding-top: 12px;
+    margin-bottom: 20px;
+}
+
+.socials__link{
+    display: flex;
+    flex-direction: row;
+}
+
+.socials__item{
+    height: 44px;
+    width: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.socials__item svg{
+    fill: white;
+}
+
+.socials__item:last-child{
+    margin-right: 0px;
+}
+
+.socials__item:hover{
+    position: relative;
+    border-radius: 50%;
+    background-color: #2196F3;
+    transition: background-color 0.5s;
+}
+
+.socials__item svg{
+    width: 20px;
+    height: 20px;
 }
 
 .main{
@@ -405,6 +593,10 @@ header hr{
     border: 1px solid #EEE;
     background: #FFF;
     width: calc(33% - 17px);
+}
+
+.cards__item:hover{
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
 .cards__item img{
