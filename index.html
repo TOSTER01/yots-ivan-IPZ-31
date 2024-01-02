@@ -288,6 +288,18 @@
             </a>
           </div>
         </div>
+        <form action="#" class="footer__news">
+          <div class="footer-newsletter__container">
+            <h4>Підпишіться на розсилку</h4>
+            <input type="text" name="" id="" class="footer-newsletter__input" placeholder="E-mail">
+          </div>
+          <button class="footer__subscribe" type="submit">
+            Підписатися
+            <svg>
+              <use xlink:href="./images/icons.svg#icon-telegram"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
     <div class="form__overlay" id="formOverlay">
@@ -299,9 +311,50 @@
                 <use xlink:href="./images/icons.svg#close-button">
               </svg>
             </button>
-          </div>    
+          </div>
+          <h2 class="form__title">Залиште свої дані, ми вам передзвонимо</h2>    
         </div>
         <form action="" class="form">
+          <ul  class="form__list">
+            <li class="form__item">
+              <input type="text" name="" id="" class="item__input">
+              <div class="item__container">
+                <p class="item__text">Ім'я</p>
+                <svg class="item__image">
+                  <use xlink:href="./images/icons.svg#person-icon">
+                </svg>
+              </div>
+            </li>
+            <li class="form__item">
+              <input type="text" name="" id="" class="item__input">
+              <div class="item__container">
+                <p class="item__text">Телефон</p>
+                <svg class="item__image">
+                  <use xlink:href="./images/icons.svg#phone-icon">
+                </svg>
+              </div>
+            </li>
+            <li class="form__item">
+              <input type="text" name="" id="" class="item__input">
+              <div class="item__container">
+                <p class="item__text">Пошта</p>
+                <svg class="item__image">
+                  <use xlink:href="./images/icons.svg#email-icon">
+                </svg>
+              </div>
+            </li>
+            <li class="form__item">
+              <p class="item__text">Коментар</p>
+              <textarea name="" id="" cols="30" rows="10 " class="item__input" placeholder="Введіть текст"></textarea>
+            </li>
+            <li class="form__item">
+              <input type="checkbox" name="" id="termsCheckbox" class="form__checkbox">
+              <label for="termsCheckbox">
+                Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a>
+              </label>
+            </li>
+          </ul>
+          <button type="submit" class="hero__submit">Відправити</button>
         </form>
       </div>
     </div>
