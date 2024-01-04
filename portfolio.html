@@ -4,42 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./scss/style.css">
 </head>
 <body>
-    <header>
-        <div class="container header__wrapper">
-            <div class="navigation__wrapper">
-              <a class="header__logo" href="./index.html"><span>Web</span>Studio</a>
-              <nav class="header__navigation">
-                <ul class="header__list">
-                  <li class="list__item"><a href="./index.html">Студія</a></li>
-                  <li class="list__item"><a href="./portfolio.html" class="current-page">Портфоліо</a></li>
-                  <li class="list__item"><a href="./portfolio.html">Контакти</a></li>
-                </ul>
-              </nav>
-            </div>
-            <ul class="header__info">
-              <li class="info__item">
-                <a href="mailto:info@devstudio.com">
-                  <svg>
-                    <use xlink:href="./images/icons.svg#email">
-                  </svg>
-                  info@devstudio.com
-                </a>
-              </li>
-              <li class="info__item">
-                <a href="tel:+38 096 111 11 11">
-                  <svg>
-                    <use xlink:href="./images/icons.svg#phone">
-                  </svg>
-                  +38 096 111 11 11
-                </a>
-              </li>
-            </ul>
-        </div>
-        <hr>
-    </header>
+  <header class="header">
+    <div class="container header__wrapper">
+      <div class="navigation__wrapper">
+        <a class="header__logo" href="./index.html"><span>Web</span>Studio</a>
+        <nav class="header__navigation navigation">
+          <ul class="navigation__list list">
+            <li class="list__item"><a href="./index.html" >Студія</a></li>
+            <li class="list__item"><a href="./portfolio.html" class="current-page">Портфоліо</a></li>
+            <li class="list__item"><a href="./portfolio.html">Контакти</a></li>
+          </ul>
+        </nav>
+      </div>
+      <ul class="header__info info">
+        <li class="info__item">
+          <a href="mailto:info@devstudio.com">
+            <svg>
+              <use xlink:href="./images/icons.svg#email">
+            </svg>
+            info@devstudio.com
+          </a>
+        </li>
+        <li class="info__item">
+          <a href="tel:+38 096 111 11 11">
+            <svg>
+              <use xlink:href="./images/icons.svg#phone">
+            </svg>
+            +38 096 111 11 11
+          </a>
+        </li>
+      </ul>
+    </div>
+    <hr>
+  </header>
+    
     <main class="main">
         <section class="container buttons">
             <ul class="buttons__list">
@@ -60,7 +61,7 @@
                 </li>
             </ul>
         </section>
-        <section class="container">
+        <section class="container cards">
             <ul class="cards__list">
                 <li class="cards__item Websites">
                     <a href="#" class="item__container">
@@ -206,7 +207,7 @@
             </a>
           </div>
         </div>
-        <form action="#" class="footer__news">
+        <form action="#" class="footer__newsletter">
           <div class="footer-newsletter__container">
             <h4>Підпишіться на розсилку</h4>
             <input type="text" name="" id="" class="footer-newsletter__input" placeholder="E-mail">

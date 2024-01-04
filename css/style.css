@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 *{
     margin: 0;
@@ -86,6 +86,9 @@ header hr{
     align-items: center;
     border-top: 4px solid transparent;
     border-bottom: 4px solid transparent;
+    font-size: 14px;
+  line-height: 16.41px;
+  font-weight: 500;
 
 }
 
@@ -125,6 +128,12 @@ header hr{
 .info__item a{
     color: #757575;
     text-decoration: none;
+    font-size: 14px;
+    line-height: 16.41px;
+    display: flex;
+  align-items: center;
+  font-weight: 500;
+
 }
 
 .info__item a svg{
@@ -172,6 +181,7 @@ header hr{
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(0, 0, 0, 0)),url("../images/bussines-team.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
 
 .hero__title{
@@ -193,7 +203,7 @@ header hr{
 
 .hero__button{
     border: none;
-    width: 216px;
+    width: 200px;
     height: 50px;
     color: white    ;
     background: #188CE8;
@@ -201,6 +211,9 @@ header hr{
     border-radius: 4px;
     margin: 0 auto;
     margin-top: 40px;
+    font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
 }
 
 .about-us__list{
@@ -305,8 +318,10 @@ header hr{
     color: #FFFFFF;
 }
 
-.our-work__item:nth-child(2n)::after{
+.our-works__item:nth-child(2n)::after{
     content: "Мобільні додатки";
+}.our-works__item:nth-child(3n)::after{
+    content: "Дизайнерські рішення";
 }
 
 .our-works__item:last-child{
@@ -468,6 +483,7 @@ header hr{
     border-radius: 4px;
     height: 92px;
     width: 170px;
+    cursor: pointer;
 }
 
 .partners__item:hover{
@@ -675,6 +691,7 @@ header hr{
     padding-bottom: 10px;
     justify-content: center;
     margin-top: 49px;
+    cursor: pointer;
 }
 
 .footer__subscribe svg{
@@ -726,6 +743,7 @@ header hr{
     border: none;
     border-radius: 4px;
     background: #F5F4FA;
+    cursor: pointer;
 }
 
 .buttons__selector:hover{
@@ -805,7 +823,16 @@ header hr{
     transition: transform 0.4s ease-in-out;
 }
 
-.cards__item:hover .cards__overlay{
+.cards__item:hover .cards__overlay,.cards__item:focus .cards__overlay {
+    display: flex;
+    visibility: visible;
+    transform: scaleY(1);
+    transform-origin: bottom;
+    height: 294px;
+    width: 370px;
+}
+
+.cards__item:focus .cards__overlay {
     display: flex;
     visibility: visible;
     transform: scaleY(1);
@@ -942,7 +969,7 @@ header hr{
     margin-bottom: 12px;
 }
 
-.hero__submit {
+.form__submit {
     color: #FFFFFF;
     background: #2196F3;
     border: none;
@@ -957,7 +984,7 @@ header hr{
     transition: 0.5s;
 }
 
-.hero__submit:hover, .hero__submit :focus {
+.form__submit:hover, .form__submit :focus {
     background: #188CE8;
     transition: 0.5s;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1490196078);
