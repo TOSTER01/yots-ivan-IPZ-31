@@ -82,7 +82,7 @@
 .our-works__item:nth-child(2n)::after {
   content: "Мобільні додатки";
 }
-.our-works__item :nth-child(3n)::after {
+.our-works__item:nth-child(3n)::after {
   content: "Дизайнерські рішення";
 }
 .our-works__item::after {
